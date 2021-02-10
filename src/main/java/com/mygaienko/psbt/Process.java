@@ -21,8 +21,10 @@ public class Process {
         strategies.add(new AlloDigitalStrategy());
         strategies.add(new CitrusStrategy());
         strategies.add(new CitrusDigitalStrategy());
-        strategies.add(new ComfyStrategy());
-        strategies.add(new ComfyDigitalStrategy());
+        strategies.add(new FoxtrotStrategy());
+        strategies.add(new FoxtrotDigitalStrategy());
+//        strategies.add(new ComfyStrategy());
+//        strategies.add(new ComfyDigitalStrategy());
     }
 
     public static void start() {
@@ -42,7 +44,7 @@ public class Process {
 
     private static void sleep() {
         try {
-            Thread.sleep(1000 * 15);
+            Thread.sleep(1000 * 45);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
