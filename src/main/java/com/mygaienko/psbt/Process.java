@@ -22,9 +22,9 @@ public class Process {
 
     public static void executeStrategy(Strategy strategy) {
         while (true) {
-            boolean found = findPs(strategy);
+            boolean found = Finder.findPs(strategy);
             if (found) {
-                notify(strategy);
+                Notifier.notify(strategy);
             }
 
             try {
@@ -35,12 +35,5 @@ public class Process {
         }
     }
 
-    private static boolean findPs(Strategy strategy) {
-        return false;
-    }
-
-    private static void notify(Strategy strategy) {
-
-    }
 
 }
