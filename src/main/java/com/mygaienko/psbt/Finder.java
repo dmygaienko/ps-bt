@@ -1,5 +1,7 @@
 package com.mygaienko.psbt;
 
+import com.mygaienko.psbt.strategy.Strategy;
+
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -12,7 +14,6 @@ public class Finder {
         HttpClient client = HttpClient.newBuilder().version(HttpClient.Version.HTTP_2).build();
 
         HttpRequest request = HttpRequest.newBuilder(URI.create(strategy.getUrl()))
-//                .header("Content-Type", "application/json")
                 .GET()
                 .build();
 
@@ -23,10 +24,11 @@ public class Finder {
             e.printStackTrace();
             return false;
         }
+
         String body = response.body();
         return strategy.getKeyWords()
                 .stream()
-                .anyMatch(body::contains);
+                .noneMatch(body::contains);
     }
 
 }

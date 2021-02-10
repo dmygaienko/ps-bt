@@ -1,5 +1,7 @@
 package com.mygaienko.psbt;
 
+import com.mygaienko.psbt.strategy.Strategy;
+
 public class Notifier {
 
     public static void notify(Strategy strategy) {

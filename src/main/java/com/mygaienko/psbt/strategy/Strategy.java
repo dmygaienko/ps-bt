@@ -1,4 +1,4 @@
-package com.mygaienko.psbt;
+package com.mygaienko.psbt.strategy;
 
 import java.util.Set;
 

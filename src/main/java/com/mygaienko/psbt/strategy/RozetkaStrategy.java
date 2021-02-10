@@ -1,4 +1,4 @@
-package com.mygaienko.psbt;
+package com.mygaienko.psbt.strategy;
 
 import java.util.Set;
 
@@ -6,17 +6,17 @@ public class RozetkaStrategy implements Strategy {
 
     @Override
     public Set<String> getKeyWords() {
-        return null;
+        return Set.of("Немає в наявності");
     }
 
     @Override
     public String getUrl() {
-        return null;
+        return "https://rozetka.com.ua/ua/playstation_5/p223588825/";
     }
 
     @Override
     public String getName() {
-        return null;
+        return "Rozetka";
     }
 
 }
