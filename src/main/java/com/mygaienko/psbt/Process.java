@@ -19,9 +19,14 @@ public class Process {
         strategies.add(new RozetkaDigitalStrategy());
         strategies.add(new AlloStrategy());
         strategies.add(new AlloDigitalStrategy());
+        strategies.add(new CitrusStrategy());
+        strategies.add(new CitrusDigitalStrategy());
+        strategies.add(new ComfyStrategy());
+        strategies.add(new ComfyDigitalStrategy());
     }
 
     public static void start() {
+        System.out.println("Process is starting...");
         strategies.forEach(strategy -> executor.execute(() -> executeStrategy(strategy)));
     }
 
