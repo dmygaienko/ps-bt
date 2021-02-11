@@ -11,8 +11,12 @@ public class FoxtrotDigitalStrategy implements Strategy {
 
     @Override
     public String getUrl() {
-//        return "https://www.foxtrot.com.ua/ru/shop/igrovye_pristavki_sony_sony-ps5.html";
         return "https://www.foxtrot.com.ua/ru/products/productminimap?productId=6576796";
+    }
+
+    @Override
+    public String getHumanUrl() {
+        return "https://www.foxtrot.com.ua/ru/shop/igrovye_pristavki_sony_sony-ps5.html";
     }
 
     @Override
