@@ -10,4 +10,8 @@ public interface Strategy {
 
     String getName();
 
+    default String getHumanUrl() {
+        return getUrl();
+    }
+
 }

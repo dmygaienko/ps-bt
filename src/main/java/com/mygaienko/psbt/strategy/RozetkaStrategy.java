@@ -14,8 +14,12 @@ public class RozetkaStrategy implements Strategy {
 
     @Override
     public String getUrl() {
-//        return "https://rozetka.com.ua/ua/playstation_5/p223588825/";
         return "https://common-api.rozetka.com.ua/v2/goods/get-price/?id=223588825&r=0.24592114345385507&with_show_in_site=1&lng=ua&lang=ua";
+    }
+
+    @Override
+    public String getHumanUrl() {
+        return "https://rozetka.com.ua/ua/playstation_5/p223588825/";
     }
 
     @Override
