@@ -11,7 +11,8 @@ public class FoxtrotStrategy implements Strategy {
 
     @Override
     public String getUrl() {
-        return "https://www.foxtrot.com.ua/ru/shop/igrovye_pristavki_sony_ps5-bluray.html";
+//        return "https://www.foxtrot.com.ua/ru/shop/igrovye_pristavki_sony_ps5-bluray.html";
+        return "https://www.foxtrot.com.ua/ru/products/productminimap?productId=6577360";
     }
 
     @Override
